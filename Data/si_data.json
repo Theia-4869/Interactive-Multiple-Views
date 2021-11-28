@@ -1,0 +1,78 @@
+{
+    "name": "mingjinshi",
+    "children": [
+        {
+            "name": "南直隸",
+            "value": 2333
+        },
+        {
+            "name": "浙江",
+            "value": 2069
+        },
+        {
+            "name": "江西",
+            "value": 1612
+        },
+        {
+            "name": "福建",
+            "value": 1263
+        },
+        {
+            "name": "北直隸",
+            "value": 1040
+        },
+        {
+            "name": "山東",
+            "value": 910
+        },
+        {
+            "name": "河南",
+            "value": 831
+        },
+        {
+            "name": "四川",
+            "value": 815
+        },
+        {
+            "name": "湖廣",
+            "value": 740
+        },
+        {
+            "name": "山西",
+            "value": 664
+        },
+        {
+            "name": "陝西",
+            "value": 510
+        },
+        {
+            "name": "廣東",
+            "value": 450
+        },
+        {
+            "name": "未知",
+            "value": 393
+        },
+        {
+            "name": "衛所",
+            "value": 344
+        },
+        {
+            "name": "廣西",
+            "value": 87
+        },
+        {
+            "name": "雲南",
+            "value": 46
+        },
+        {
+            "name": "交阯",
+            "value": 5
+        },
+        {
+            "name": "貴州",
+            "value": 4
+        }
+    ],
+    "value": 14116
+}

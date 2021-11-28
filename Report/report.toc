@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}数据描述与维度分析(Data Description \& Dimension Analysis)}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}数据描述}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}维度分析}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}设计目标与宗旨(Design Objective)}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}堆叠面积图}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}堆叠柱状图}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}矩形树图}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}交互设计}{3}{subsection.2.4}
+\contentsline {section}{\numberline {3}可视化结果描述(Visualization Result Description)}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}结果展示}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}总结与分析}{4}{subsection.3.2}

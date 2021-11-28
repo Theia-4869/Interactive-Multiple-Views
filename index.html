@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Interactive Multiple Views of Mingjinshi Dataset</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="container">
+		    <div id='top_panel'>
+		        <div class="text"> 可交互多視圖明進士數據可視化 </div>
+		    </div>
+		    <div id='left_panel'></div>
+		    <div id='right_panel'></div>
+			<div id='bottom_panel'>
+				<div id="neon-btn">
+					<button class="btn-click one" id="si">司級</button>
+					<button class="btn-click two" id="treemap_title">明進士籍貫矩形樹圖</button>
+					<button class="btn three" id="fu">府級</button>
+				</div>
+				<div id="treemap"></div>
+			</div>
+		</div>
+		<script src="js/d3-v5.12.0/d3.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<!--字典、地图轮廓等-->
+		<script src="js/Scatterplot.js"></script>
+		<script src="js/Barchart.js"></script>
+		<script src="js/Linking.js"></script>
+		<script src="js/DataProcess.js"></script>
+		<script src="js/StackedAreachart.js"></script>
+		<script src="js/StackedBarchart.js"></script>
+		<script src="js/Treemap.js"></script>
+		<script src="js/Selecting.js"></script>
+		<script>
+			setUi();
+		    // d3.csv("Data/provinces.csv").then(function(data){
+		    //     drawScatterplot(data);
+		    //     drawBarChart(data);
+		    // });
+			option = {};
+			d3.json("Data/processed_data.json").then(function(data){
+				option.year = undefined;
+				option.census = undefined;
+				option.subject = undefined;
+				option.native_level = undefined;
+				option.native = undefined;
+				
+				year_data = processYear(data);
+				drawStackedAreaChart(year_data);
+				
+				subject_data = processSubject(data);
+				drawStackedBarChart(subject_data);
+			});
+			d3.json("Data/si_data.json").then(function(data){
+				drawTreemap(data);
+			});
+		</script>
+		<script type="text/javascript">
+			var si = document.getElementById('si');
+			var fu = document.getElementById('fu');
+		
+			si.onclick = function() {
+				document.getElementById('treemap').innerHTML = "";
+				d3.json("Data/si_data.json").then(function(data){
+					drawTreemap(data);
+				});
+				$(this).removeClass("btn");
+				$(this).addClass("btn-click");
+				$(this).siblings().removeClass("btn-click");
+				$(this).siblings().addClass("btn");
+			}
+			fu.onclick = function() {
+				document.getElementById('treemap').innerHTML = "";
+				d3.json("Data/fu_data.json").then(function(data){
+					drawTreemap(data);
+				});
+				$(this).removeClass("btn");
+				$(this).addClass("btn-click");
+				$(this).siblings().removeClass("btn-click");
+				$(this).siblings().addClass("btn");
+			}
+		</script>
+	</body>
+</html>

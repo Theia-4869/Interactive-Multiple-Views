@@ -1,0 +1,157 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background: url(Figure/R.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-attachment: fixed;
+	display: grid;
+	grid-template-rows: 4% 40% 56%;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: "top top"
+		"left right"
+		"bottom bottom";
+}
+
+#top_panel {
+	width: 100%;
+	height: 100%;
+	background: lightblue;
+	grid-area: top;
+}
+
+.text {
+	text-align: center;
+	font-family: 楷体;
+	font-size: 120%;
+	font-weight: 600;
+	padding-top: 0.5rem;
+}
+
+#left_panel {
+	width: 100%;
+	height: 100%;
+	/*background: #EBEBEB;*/
+	/* background: white; */
+	grid-area: left;
+}
+
+#right_panel {
+	width: 100%;
+	height: 100%;
+	/*background: #EBEBEB;*/
+	/* background: white; */
+	grid-area: right;
+	/* box-sizing: border-box; */
+	/* border: solid 1px grey; */
+}
+
+#bottom_panel {
+	width: 100%;
+	height: 100%;
+	/* background: white; */
+	grid-area: bottom;
+}
+
+
+.hidden {
+	/*fill-opacity: 0.3;*/
+}
+
+.active {
+	/*opacity: 1;*/
+}
+
+#neon-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 30px;
+	width: 800px;
+	background: #031628;
+	margin: 0 auto;
+}
+
+.btn {
+	border: 1px solid;
+	background-color: transparent;
+	padding: 5px 20px;
+	font-family: '楷体';
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.btn-click {
+	border: 1px solid;
+	background-color: white;
+	padding: 5px 20px;
+	font-family: '楷体';
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.one {
+	color: #4cc9f0;
+}
+
+.two {
+	color: white;
+	background-color: #f038ff;
+}
+
+.three {
+	color: #b9e769;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn-click:hover {
+	color: white;
+}
+
+.one:hover {
+	background-color: #4cc9f0;
+	-webkit-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+	-moz-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+	box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+}
+
+.three:hover {
+	background-color: #b9e769;
+	-webkit-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+	-moz-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+	box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+}
+
+.grid-line {
+	stroke: black;
+	shape-rendering: crispEdges;
+	stroke-opacity: .2;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2;
+}
+
+.area {
+	stroke: none;
+	fill: steelblue;
+	fill-opacity: .2;
+}
